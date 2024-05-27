@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  font-family:  "Figtree", sans-serif;;
+}
+
+#parent-container {
+  border: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set height to match screen viewport */
+  overflow-y: hidden; /* Prevent vertical scrollbar */
+}
+
+#container {
+  max-width: 300px;
+  border: 1px solid #000000;
+  padding: 20px;
+  height: auto;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+  box-shadow: 6px 6px;
+}
+
+.myimage {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.learning {
+  padding: 6px;
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-bottom:10px;
+  cursor: pointer;
+}
+
+.learning:hover {
+  background-color: hsl(47, 93%, 56%);
+}
+
+.published {
+  font-size: 10px;
+  margin-bottom:10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+
+.title:hover {
+  color:hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.info {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.small-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap:10px;
+}
+
+.myimage2 {
+  display: block;
+  width: 30px;
+}
+
+.small-container p {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 375px){
+  #parent-container {
+    width: 100%;
+  }
+
+  #container {
+    max-width:100%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #container {
+    width: 70%;
+  }
+}
+
